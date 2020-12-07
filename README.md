@@ -13,11 +13,7 @@
 - the only api of this java application is : `yourIpMachine:6040/rabbit/add` with `POST` method
 - the body of above api is like the sample.
 - Use Case of this api :
-  - for example you have an api and every single request must be returned 200 status but your server or
-  your machine`(for example:http://localhost:5030/)` is down now , so you push your request to rabbitmq's que to save this request from exception and whenever
-  your machine will return live again , requests will listen from the que.
-  I set reque number to 8 times `rabbitmq.max.requed.fail.response=${rabbitmq_max_requed_fail_response:8}` in application.properties 
-  which means that , every request , if one request fail 8 times , It will be removed from the que.(`you can increase this number to your preferences`)
+  - for example, you have an API and every single request must be returned 200 status but your server or your machine(for example http://localhost:5030/) is down now, so you push your request to rabbitmq's quest to save this request from exception and whenever your machine will return live again, requests will listen from the queue. I set requeue number to 8 times rabbitmq.max.requed.fail.response=${rabbitmq_max_requed_fail_response:8} in application. properties which mean that , every  request, if one request fail 8 times, It will be removed from the queue. (you can increase this number to your preferences)
 
 
 ##### Sample for body of `yourIpMachine:6040/rabbit/add`
