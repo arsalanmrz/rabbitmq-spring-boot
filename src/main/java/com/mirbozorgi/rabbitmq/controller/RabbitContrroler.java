@@ -2,7 +2,7 @@ package com.mirbozorgi.rabbitmq.controller;
 
 
 import com.mirbozorgi.rabbitmq.config.ApplicationConfigReader;
-import com.mirbozorgi.rabbitmq.service.RabbitMqMessageSender;
+import com.mirbozorgi.rabbitmq.service.impl.RabbitMqMessageSender;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
